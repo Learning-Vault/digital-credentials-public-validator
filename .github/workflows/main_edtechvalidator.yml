@@ -23,8 +23,7 @@ jobs:
 
       - name: Build with Maven
         run: 
-          cd inspector-vc-web
-          mvn clean install
+          mvn clean install --file ./inspector-vc-web/pom.xml
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
